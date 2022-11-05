@@ -36,7 +36,7 @@ add_message("John", "hello")
 # API для отправки сообщений /send_message?sender=Mike&text=Hello
 @app.route("/send_message")
 def send_message():
-    sender = request.args["sender"]  # ToDO: error here, sender vs name
+    sender = request.args["sender"]  
     text = request.args["text"]
     add_message(sender, text)
 
